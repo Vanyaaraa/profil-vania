@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,80 +7,289 @@
 
     <title>Profil Pribadi - Vania Fitra Dwi Ramadhani</title>
 
-    <style>
-        /* Membuat garis tabel menjadi satu garis */
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Vania Fitra Dwi Ramadhani</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#beranda">
+                Vania<span>.</span>
+            </a>
 
-    <p>Mahasiswa Sistem Informasi</p>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuNavigasi"
+                    aria-controls="menuNavigasi"
+                    aria-expanded="false"
+                    aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <h2>Tentang Saya</h2>
+            <div class="collapse navbar-collapse" id="menuNavigasi">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pendidikan">Pendidikan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keahlian">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <p>
-        Saya adalah mahasiswa Sistem Informasi yang sedang mempelajari
-        teknologi informasi dan pengembangan web.
-    </p>
 
-    <h2>Riwayat Pendidikan</h2>
+    <!-- HEADER / HERO -->
+    <header class="hero-section" id="beranda">
+        <div class="container">
+            <div class="hero-content text-center">
 
-    <table border="1">
-        <tr>
-            <th>Jenjang</th>
-            <th>Nama Institusi</th>
-            <th>Tahun</th>
-        </tr>
+                <div class="profile-circle">VF</div>
 
-        <tr>
-            <td>SD</td>
-            <td>SD Nasima</td>
-            <td>2013 - 2019</td>
-        </tr>
+                <p class="hero-label">
+                    HALO, SELAMAT DATANG DI PROFIL SAYA
+                </p>
 
-        <tr>
-            <td>SMP</td>
-            <td>SMP Nasima</td>
-            <td>2019 - 2022</td>
-        </tr>
+                <h1>Vania Fitra Dwi Ramadhani</h1>
 
-        <tr>
-            <td>SMA</td>
-            <td>SMAN 13 Semarang</td>
-            <td>2022 - 2025</td>
-        </tr>
+                <p class="hero-description">
+                    Mahasiswa Sistem Informasi
+                    <br>
+                    Universitas Dian Nuswantoro
+                </p>
 
-        <tr>
-            <td>S1</td>
-            <td>Universitas Dian Nuswantoro</td>
-            <td>2025 - Sekarang</td>
-        </tr>
-    </table>
+                <a href="#tentang" class="btn btn-primary btn-lg rounded-pill px-4">
+                    Kenali Saya
+                </a>
 
-    <h2>Keahlian</h2>
+            </div>
+        </div>
+    </header>
 
-    <ul>
-        <li>Memasak</li>
-        <li>Berkomunikasi</li>
-        <li>Bekerjasama Dalam Tim</li>
-        <li>Menyanyi</li>
-    </ul>
 
-    <p>
-        &copy; 2026 Vania Fitra Dwi Ramadhani
-    </p>
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <!-- TENTANG SAYA -->
+        <section class="section-padding" id="tentang">
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <p class="section-label">PERKENALAN</p>
+                    <h2>Tentang Saya</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="content-card">
+                            <p>
+                                Halo, saya <strong>Vania Fitra Dwi Ramadhani</strong>.
+                                Saya merupakan mahasiswa Program Studi Sistem Informasi
+                                di Universitas Dian Nuswantoro.
+                            </p>
+
+                            <p>
+                                Saya memiliki ketertarikan terhadap bidang teknologi
+                                informasi, khususnya pengembangan website dan pemrograman.
+                                Saat ini saya sedang mempelajari HTML, CSS, dan teknologi
+                                web lainnya untuk meningkatkan kemampuan serta membuat
+                                proyek sebagai portofolio pribadi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RIWAYAT PENDIDIKAN -->
+        <section class="section-padding section-background" id="pendidikan">
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <p class="section-label">PERJALANAN AKADEMIK</p>
+                    <h2>Riwayat Pendidikan</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <div class="content-card table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Jenjang</th>
+                                        <th scope="col">Nama Institusi</th>
+                                        <th scope="col">Tahun</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><span class="level-badge">SD</span></td>
+                                        <td>SD Nasima</td>
+                                        <td>2013–2019</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="level-badge">SMP</span></td>
+                                        <td>SMP Nasima</td>
+                                        <td>2019–2022</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="level-badge">SMA</span></td>
+                                        <td>SMAN 13 Semarang</td>
+                                        <td>2022–2025</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><span class="level-badge">S1</span></td>
+                                        <td>Universitas Dian Nuswantoro</td>
+                                        <td>2025–Sekarang</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KEAHLIAN -->
+        <section class="section-padding" id="keahlian">
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <p class="section-label">KEMAMPUAN SAYA</p>
+                    <h2>Keahlian</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-number">01</div>
+                            <h3>Kerja Sama Tim</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-number">02</div>
+                            <h3>Komunikasi yang baik</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-number">03</div>
+                            <h3>Mampu beradaptasi</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-number">04</div>
+                            <h3>Manajemen waktu</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MINAT DAN TUJUAN -->
+        <section class="section-padding section-background" id="minat">
+            <div class="container">
+
+                <div class="section-title text-center">
+                    <p class="section-label">RENCANA PENGEMBANGAN DIRI</p>
+                    <h2>Minat dan Tujuan</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content-card">
+                            <ol class="goal-list">
+                                <li>Mempelajari dasar-dasar pengembangan website.</li>
+                                <li>Meningkatkan kemampuan pemrograman.</li>
+                                <li>Mempelajari teknologi web modern.</li>
+                                <li>Membangun website sebagai portofolio pribadi.</li>
+                                <li>Mengoperasikan komputer dasar.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- KONTAK -->
+        <section class="section-padding" id="kontak">
+            <div class="container text-center">
+
+                <div class="section-title">
+                    <p class="section-label">MEDIA SOSIAL</p>
+                    <h2>Kontak</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <p class="contact-description">
+                    Temukan saya melalui Instagram.
+                </p>
+
+                <a href="https://instagram.com/vanyaaraa"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary rounded-pill px-4">
+                    Instagram @vanyaaraa
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="footer-name">Vania Fitra Dwi Ramadhani</p>
+            <p class="mb-0">
+                &copy; 2026
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript untuk menu mobile -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,228 @@
+/* Tugas 2 - Profil Pribadi Responsif
+   File ini mengatur warna, layout, tipografi, tabel, dan tampilan mobile. */
+
+:root {
+    --navy: #142b4a;
+    --blue: #2864a8;
+    --blue-light: #eaf2fc;
+    --text: #263449;
+    --muted: #637187;
+    --surface: #ffffff;
+    --page: #f4f7fb;
+    --border: #dce5f0;
+    --shadow: 0 12px 32px rgba(20, 43, 74, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--page);
+}
+
+.hero {
+    padding: 76px 24px 84px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #142b4a 0%, #2864a8 58%, #5b91cf 100%);
+}
+
+.hero-content {
+    width: min(100%, 850px);
+    margin: 0 auto;
+}
+
+.eyebrow,
+.section-label {
+    margin: 0 0 10px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.eyebrow {
+    color: #d5e7ff;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+}
+
+.subtitle {
+    margin: 18px 0 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.university {
+    margin: 2px 0 25px;
+    color: #e3edfa;
+}
+
+.hero-link,
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 17px;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-link {
+    color: var(--navy);
+    background: white;
+}
+
+.hero-link:hover {
+    background: #eaf2fc;
+}
+
+.container {
+    width: min(100% - 40px, 900px);
+    margin: -32px auto 48px;
+    position: relative;
+    display: grid;
+    gap: 22px;
+}
+
+.card {
+    padding: 28px 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.section-label {
+    color: var(--blue);
+}
+
+.card h2 {
+    margin: 0 0 14px;
+    color: var(--navy);
+    font-size: 1.55rem;
+    line-height: 1.3;
+}
+
+.card p {
+    margin-top: 0;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+}
+
+th {
+    color: var(--navy);
+    background: var(--blue-light);
+    font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8fafd;
+}
+
+.skill-list,
+.goal-list {
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+
+.skill-list li,
+.goal-list li {
+    padding: 3px 0;
+}
+
+.skill-list li::marker,
+.goal-list li::marker {
+    color: var(--blue);
+}
+
+.social-link {
+    color: white;
+    background: var(--blue);
+}
+
+.social-link:hover {
+    background: var(--navy);
+}
+
+.footer {
+    padding: 24px 20px;
+    color: #dce8f7;
+    background: var(--navy);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 56px 20px 68px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        overflow-wrap: anywhere;
+    }
+
+    .subtitle {
+        font-size: 1.05rem;
+    }
+
+    .container {
+        width: min(100% - 24px, 900px);
+        gap: 15px;
+        margin-top: -24px;
+    }
+
+    .card {
+        padding: 21px 18px;
+        border-radius: 14px;
+    }
+
+    .card h2 {
+        font-size: 1.35rem;
+    }
+
+    th,
+    td {
+        padding: 9px 10px;
+        font-size: 0.9rem;
+    }
+}
